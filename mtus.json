@@ -1,0 +1,26 @@
+{
+    "common_mtus": {
+        "ABAP Dumps": "SID/hostname/ABAP/Dumps",
+        "Failed Jobs": "SID/hostname/Background/FailedJobs",
+        "Update Errors": "SID/hostname/Update/ErrorCount",
+        "TRFC Errors": "SID/hostname/tRFC/ErrorCount",
+        "Spool Errors": "SID/hostname/Spool/ErrorCount",
+        "Response Time": "SID/hostname/Dialog/ResponseTimeDialog",
+        "CPU Usage": "SID/hostname/System/CPUandMemory",
+        "Disk Space": "SID/hostname/System/DiskSpace"
+    },
+    "thresholds": {
+        "ABAP Dumps": {"warning": 5, "critical": 10},
+        "Failed Jobs": {"warning": 1, "critical": 3},
+        "Update Errors": {"warning": 2, "critical": 5},
+        "TRFC Errors": {"warning": 5, "critical": 10},
+        "Spool Errors": {"warning": 3, "critical": 7},
+        "Response Time": {"warning": 800, "critical": 1200},
+        "CPU Usage": {"warning": 70, "critical": 90},
+        "Disk Space": {"warning": 20, "critical": 10}
+    },
+    "default_thresholds": {
+        "warning": 1,
+        "critical": 5
+    }
+}
